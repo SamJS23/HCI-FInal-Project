@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website Prototype</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+          <a id="brand-h">Hotel Name</a>
+          
+          <ul class="navbar-menu">
+            <li><a> Explore</a></li>
+            <li><a> Rooms </a></li>
+            <li><a>Booking </a></li>
+            <li><a>Search</a></li>
+            <li><a>Account</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="hotel1.jpg" style="width: 100%;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="hotel2.jpg"  style="width: 100%;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="hotel3.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="w3-content para1">
+  <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;"> Hotel Name </h1>
+  <!--Hotel Description-->
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida convallis laoreet. Vivamus id augue auctor, maximus arcu vitae, commodo arcu. Pellentesque ac enim pulvinar quam bibendum mattis. Proin sed mattis urna. Nam purus turpis, vestibulum a est in, vehicula tristique enim. Quisque quis vulputate magna. In cursus facilisis mauris ac hendrerit. Praesent finibus, neque et iaculis posuere, erat ante convallis libero, eget consequat nisl est nec augue. In nisi elit, lobortis a felis rutrum, pretium posuere ex. </p>
+</div>
+<div style="background-color:white;">
+<div class="col-6">
+  <fieldset>
+  <img src="room type 1.jpg" style="width:100%; height:100%;padding: 0;margin: 0;box-sizing: border-box;" alt="double room"></br>
+  <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color:#333">Room Type 1</h2>
+  <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida convallis laoreet. Vivamus id augue auctor, maximus arcu vitae, commodo arcu. Pellentesque ac enim pulvinar quam bibendum mattis. Proin sed mattis urna. Nam purus turpis, vestibulum a est in, vehicula tristique enim. Quisque quis vulputate magna. In cursus facilisis mauris ac hendrerit. Praesent finibus, neque et iaculis posuere, erat ante convallis libero, eget consequat nisl est nec augue. In nisi elit, lobortis a felis rutrum, pretium posuere ex.</p>
+  <button class="button"> Explore</button>
+  <button class="button"> Book Now </button>
+  </fieldset>
+</div>
+<div class="col-6">
+  <fieldset>
+  <img src="room type 2.jpg" style="width:100%; height:100%;padding: 0;margin: 0;box-sizing: border-box;"  alt="twin room"></br>
+  <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color:#333">Room Type 2</h2>
+  <p class="para2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida convallis laoreet. Vivamus id augue auctor, maximus arcu vitae, commodo arcu. Pellentesque ac enim pulvinar quam bibendum mattis. Proin sed mattis urna. Nam purus turpis, vestibulum a est in, vehicula tristique enim. Quisque quis vulputate magna. In cursus facilisis mauris ac hendrerit. Praesent finibus, neque et iaculis posuere, erat ante convallis libero, eget consequat nisl est nec augue. In nisi elit, lobortis a felis rutrum, pretium posuere ex.</p>
+  <button class="button"> Explore</button>
+  <button class="button"> Book Now </button>
+  </fieldset>
+</div>
+</div>
+<footer style="background-color: #333; color: white; padding: 20px; text-align: center;clear:both;">
+  <p>&copy; 2023 Hotel Name. All rights reserved.</p>
+  <p>Contact us at: smth@gmail.com</p>
+</footer>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+     
+</body>
+</html>
