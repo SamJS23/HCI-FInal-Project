@@ -1,52 +1,44 @@
+.container{
+  width: 85%;
+  margin: 0 auto;
+  clear: both;
+  font-family: 'Poppins';
+}
+#brand-h{
+  font-size: 33px;
+}
+nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 20px;
+  background: #fff;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 1px 1px 1px rgba(66, 65, 65, 0.598);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  transition: all 0.5s;
+}
 
-  .container{
-    width: 80%;
-    margin: 0 auto;
-    clear: both;
-  }
-  #brand-h{
-    font-size: 26px;
-  }
-
+  ul.navbar-menu{
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    display: inline-block;
   
-
-  
-  
-  
-
-
-  nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 20px;
-    background: #fff;
-    height: 80px;
-    line-height: 80px;
-    box-shadow: 1px 1px 1px rgba(230, 15, 15, 0.598);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9998;
-    transition: all 0.5s;
-  }
-
-    ul.navbar-menu{
-      margin: 0;
-      margin-right: 10px;
-      padding: 0;
+  }    
+    li{
       display: inline-block;
-    
-    }    
-      li{
-        display: inline-block;
-        margin: 0 10px;
+      margin: 0 10px;
+    }
+      a{
+        color: #666;
+        font-size: 14px;
       }
-        a{
-          color: #666;
-          font-size: 14px;
-        }
-        
+      
 
 img{max-height: 630px;}
 img {vertical-align: middle;}
@@ -170,7 +162,6 @@ img {vertical-align: middle;}
   font-family:Georgia, 'Times New Roman', Times, serif;
   color: #333;
 }
-
 
 
 
