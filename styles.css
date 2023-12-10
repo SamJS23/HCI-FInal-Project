@@ -47,7 +47,21 @@ a {
   font-size: 14px;
   text-decoration: none;
 }
-
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -179,7 +193,7 @@ img {vertical-align: middle;}
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   padding: 100px;
-  margin: 80px;
+  margin: 95px;
   color:#333;
 
 }
