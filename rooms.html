@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1{
+        font-family: "Poppins";
+        font-size: 25px;
+      }
+      h2{
+        font-size: 12px;
+        font-family: "Poppins";
+      }
+      li{
+        font-size: 10px;
+        font-family: "Poppins";
+      }
+      * {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
     <title>Hotel Website Prototype</title>
 </head>
 <body>
@@ -17,7 +47,7 @@
       
       <ul class="navbar">
         <li><a> Explore</a></li>
-        <li><a> Rooms </a></li>
+        <li><a href="rooms.html"> Rooms </a></li>
         <li><a>Booking </a></li>
         <li><a>Search</a></li>
         <li><a href="log in.html">Sign In</a></li>
@@ -51,22 +81,373 @@
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 <div class="info-near">
-    <div class="near-container fade-in">
+    <div class="near-container" id="first">
         <div class="near">
             <h1 class="heading"> Royal Oasis Palace</h1>
             <hr class="hr">
             <p class="para">
-               Our Hotel is in the heart of the bustling city center so you can enjoy activities from all ranges of the spectrum</p>
+              Step into a realm of unparalleled luxury with our exquisite Royal Oasis Palace, an indulgent retreat that transcends ordinary expectations. Nestled within Savistar Hotel, this lavishly appointed suite is a celebration of opulence, offering an unparalleled experience for the discerning traveler.
+            </p>
+            <button class="button" onclick="togglePopup1()"> More Information </button>
+            <button class="button"> Book Now </button>
         </div>
-        <hr class="hr-mobile-only">
         <div class="room-image-container">
             <img src="room type 1.jpg">
         </div>
     </div>
+      <div class="near-container">
+        <div class="room-image-container">
+          <img src="room type 2.jpg">
+          </div>
+          <div class="near">
+              <h1 class="heading"> Royal Palace</h1>
+              <hr class="hr">
+              <p class="para">
+                Step into the realm of ultimate luxury at Savistar Hotel's Royal Palace, an opulent sanctuary designed for the most discerning travelers seeking an extraordinary experience. Every element of this exclusive retreat is crafted to immerse you in unparalleled comfort and sophistication.
+              </p>
+              <button class="button" onclick="togglePopup2()"> More Information </button>
+              <button class="button"> Book Now </button>
+              </div>
+              </div>
+              <div class="near-container">
+                <div class="near">
+                    <h1 class="heading"> Imperial Palace </h1>
+                    <hr class="hr">
+                    <p class="para">
+                      Step into a realm of unparalleled luxury with our exquisite Royal Oasis Palace, an indulgent retreat that transcends ordinary expectations. Nestled within Savistar Hotel, this lavishly appointed suite is a celebration of opulence, offering an unparalleled experience for the discerning traveler.
+                    </p>
+                    <button class="button" onclick="togglePopup3()"> More Information </button>
+                    <button class="button"> Book Now </button>
+                </div>
+                <div class="room-image-container">
+                    <img src="room type 3.jpg">
+                </div>
+            </div>
+            <div class="near-container">
+              <div class="room-image-container">
+                <img src="room type 4.jpg">
+                </div>
+                <div class="near">
+                    <h1 class="heading"> Jade Palace </h1>
+                    <hr class="hr">
+                    <p class="para">
+                      Step into the realm of ultimate luxury at Savistar Hotel's Royal Palace, an opulent sanctuary designed for the most discerning travelers seeking an extraordinary experience. Every element of this exclusive retreat is crafted to immerse you in unparalleled comfort and sophistication.
+                    </p>
+                    <button class="button" onclick="togglePopup4()"> More Information </button>
+                    <button class="button"> Book Now </button>
+                    </div>
+                    </div>
+                    </div>
+    <div class="content" id="content1"> 
+      <div onclick="togglePopup1()" class="close-btn"> 
+        &times;
+      </div> 
+      <h1>Royal Oasis Palace</h1>
+      <hr class="hr">
+    <div class="row">
+    <div class="column">
+    <h2>Bedding:</h2>
+    <ul>
+        <li>King-size bed with premium bedding</li>
+    </ul>
 
-<script src="index.js">
+    <h2>Bathroom:</h2>
+    <ul>
+        <li>Spacious ensuite bathroom</li>
+        <li>Separate shower and bathtub</li>
+        <li>Plush bathrobes</li>
+        <li>Luxury toiletries</li>
+        <li>Hairdryer</li>
+    </ul>
 
-</script>
+    <h2>Entertainment:</h2>
+    <ul>
+        <li>Large flat-screen TV</li>
+        <li>Cable/satellite channels</li>
+        <li>In-room movies on demand</li>
+        <li>High-quality sound system</li>
+    </ul>
+        <h2>Comfort and Convenience:</h2>
+        <ul>
+            <li>Climate control with individual thermostat</li>
+            <li>Blackout curtains for privacy and quality sleep</li>
+            <li>Writing desk/workspace</li>
+            <li>Coffee/tea maker with premium selections</li>
+            <li>Well-stocked mini-bar</li>
+            <li>In-room dining service</li>
+        </ul>
+    </div>
+    <div class="column">
+        <h2>Technology:</h2>
+        <ul>
+            <li>High-speed Wi-Fi</li>
+            <li>Telephone with voicemail</li>
+            <li>Multiple USB charging ports</li>
+            <li>Alarm clock with charging capabilities</li>
+        </ul>
+    
+        <h2>Safety and Security:</h2>
+        <ul>
+            <li>Electronic key card access</li>
+            <li>In-room safe for valuables</li>
+            <li>Smoke detectors and fire sprinklers</li>
+        </ul>
+    
+        <h2>View:</h2>
+        <ul>
+            <li>Depending on the hotel's location, a Deluxe King Suite may offer a specific view (e.g., city skyline, ocean, garden).</li>
+        </ul>
+    
+        <h2>Additional Features:</h2>
+        <ul>
+            <li>Private balcony with seating</li>
+            <li>Jacuzzi/hot tub in the ensuite bathroom</li>
+            <li>Fireplace for added ambiance</li>
+            <li>Complimentary welcome amenities</li>
+            <li>Evening turndown service</li>
+        </ul>
+    
+      
+        </div>
+        </div>
+  </div> 
+  <div class="content" id="content2"> 
+    <div onclick="togglePopup2()" class="close-btn"> 
+      &times;
+    </div> 
+    <h1>Royal Palace</h1>
+    <hr class="hr">
+    <div class="row">
+    <div class="column">
+  <h2>Bedding:</h2>
+  <ul>
+      <li>King-size bed with premium bedding</li>
+  </ul>
+
+  <h2>Bathroom:</h2>
+  <ul>
+      <li>Spacious ensuite bathroom</li>
+      <li>Separate shower and bathtub</li>
+      <li>Plush bathrobes</li>
+      <li>Luxury toiletries</li>
+      <li>Hairdryer</li>
+  </ul>
+
+  <h2>Entertainment:</h2>
+  <ul>
+      <li>Large flat-screen TV</li>
+      <li>Cable/satellite channels</li>
+      <li>In-room movies on demand</li>
+      <li>High-quality sound system</li>
+  </ul>
+      <h2>Comfort and Convenience:</h2>
+      <ul>
+          <li>Climate control with individual thermostat</li>
+          <li>Blackout curtains for privacy and quality sleep</li>
+          <li>Writing desk/workspace</li>
+          <li>Coffee/tea maker with premium selections</li>
+          <li>Well-stocked mini-bar</li>
+          <li>In-room dining service</li>
+      </ul>
+  </div>
+  <div class="column">
+      <h2>Technology:</h2>
+      <ul>
+          <li>High-speed Wi-Fi</li>
+          <li>Telephone with voicemail</li>
+          <li>Multiple USB charging ports</li>
+          <li>Alarm clock with charging capabilities</li>
+      </ul>
+  
+      <h2>Safety and Security:</h2>
+      <ul>
+          <li>Electronic key card access</li>
+          <li>In-room safe for valuables</li>
+          <li>Smoke detectors and fire sprinklers</li>
+      </ul>
+  
+      <h2>View:</h2>
+      <ul>
+          <li>Depending on the hotel's location, a Deluxe King Suite may offer a specific view (e.g., city skyline, ocean, garden).</li>
+      </ul>
+  
+      <h2>Additional Features:</h2>
+      <ul>
+          <li>Private balcony with seating</li>
+          <li>Jacuzzi/hot tub in the ensuite bathroom</li>
+          <li>Fireplace for added ambiance</li>
+          <li>Complimentary welcome amenities</li>
+          <li>Evening turndown service</li>
+      </ul>
+      </div>
+      </div>
+  
      
+</div>
+<div class="content" id="content3"> 
+  <div onclick="togglePopup3()" class="close-btn"> 
+    &times;
+  </div> 
+  <h1>Imperial Palace</h1>
+  <hr class="hr">
+  <div class="row">
+    <div class="column">
+<h2>Bedding:</h2>
+<ul>
+    <li>King-size bed with premium bedding</li>
+</ul>
+
+<h2>Bathroom:</h2>
+<ul>
+    <li>Spacious ensuite bathroom</li>
+    <li>Separate shower and bathtub</li>
+    <li>Plush bathrobes</li>
+    <li>Luxury toiletries</li>
+    <li>Hairdryer</li>
+</ul>
+
+<h2>Entertainment:</h2>
+<ul>
+    <li>Large flat-screen TV</li>
+    <li>Cable/satellite channels</li>
+    <li>In-room movies on demand</li>
+    <li>High-quality sound system</li>
+</ul>
+    <h2>Comfort and Convenience:</h2>
+    <ul>
+        <li>Climate control with individual thermostat</li>
+        <li>Blackout curtains for privacy and quality sleep</li>
+        <li>Writing desk/workspace</li>
+        <li>Coffee/tea maker with premium selections</li>
+        <li>Well-stocked mini-bar</li>
+        <li>In-room dining service</li>
+    </ul>
+</div>
+<div class="column">
+    <h2>Technology:</h2>
+    <ul>
+        <li>High-speed Wi-Fi</li>
+        <li>Telephone with voicemail</li>
+        <li>Multiple USB charging ports</li>
+        <li>Alarm clock with charging capabilities</li>
+    </ul>
+
+    <h2>Safety and Security:</h2>
+    <ul>
+        <li>Electronic key card access</li>
+        <li>In-room safe for valuables</li>
+        <li>Smoke detectors and fire sprinklers</li>
+    </ul>
+
+    <h2>View:</h2>
+    <ul>
+        <li>Depending on the hotel's location, a Deluxe King Suite may offer a specific view (e.g., city skyline, ocean, garden).</li>
+    </ul>
+
+    <h2>Additional Features:</h2>
+    <ul>
+        <li>Private balcony with seating</li>
+        <li>Jacuzzi/hot tub in the ensuite bathroom</li>
+        <li>Fireplace for added ambiance</li>
+        <li>Complimentary welcome amenities</li>
+        <li>Evening turndown service</li>
+    </ul>
+    </div>
+    </div>
+
+    
+</div>
+<div class="content" id="content4"> 
+  <div onclick="togglePopup4()" class="close-btn"> 
+    &times;
+  </div> 
+  <h1>Jade Palace</h1>
+  <hr class="hr">
+  <div class="row">
+    <div class="column">
+<h2>Bedding:</h2>
+<ul>
+    <li>King-size bed with premium bedding</li>
+</ul>
+
+<h2>Bathroom:</h2>
+<ul>
+    <li>Spacious ensuite bathroom</li>
+    <li>Separate shower and bathtub</li>
+    <li>Plush bathrobes</li>
+    <li>Luxury toiletries</li>
+    <li>Hairdryer</li>
+</ul>
+
+<h2>Entertainment:</h2>
+<ul>
+    <li>Large flat-screen TV</li>
+    <li>Cable/satellite channels</li>
+    <li>In-room movies on demand</li>
+    <li>High-quality sound system</li>
+</ul>
+    <h2>Comfort and Convenience:</h2>
+    <ul>
+        <li>Climate control with individual thermostat</li>
+        <li>Blackout curtains for privacy and quality sleep</li>
+        <li>Writing desk/workspace</li>
+        <li>Coffee/tea maker with premium selections</li>
+        <li>Well-stocked mini-bar</li>
+        <li>In-room dining service</li>
+    </ul>
+</div>
+<div class="column">
+    <h2>Technology:</h2>
+    <ul>
+        <li>High-speed Wi-Fi</li>
+        <li>Telephone with voicemail</li>
+        <li>Multiple USB charging ports</li>
+        <li>Alarm clock with charging capabilities</li>
+    </ul>
+
+    <h2>Safety and Security:</h2>
+    <ul>
+        <li>Electronic key card access</li>
+        <li>In-room safe for valuables</li>
+        <li>Smoke detectors and fire sprinklers</li>
+    </ul>
+
+    <h2>View:</h2>
+    <ul>
+        <li>Depending on the hotel's location, a Deluxe King Suite may offer a specific view (e.g., city skyline, ocean, garden).</li>
+    </ul>
+
+    <h2>Additional Features:</h2>
+    <ul>
+        <li>Private balcony with seating</li>
+        <li>Jacuzzi/hot tub in the ensuite bathroom</li>
+        <li>Fireplace for added ambiance</li>
+        <li>Complimentary welcome amenities</li>
+        <li>Evening turndown service</li>
+    </ul>
+    </div>
+    </div>
+
+    
+</div>
+  <footer style="background-color: #333; color: white; padding: 20px; text-align: center;clear:both;">
+    <p>&copy; 2023 Savistar. All rights reserved.</p>
+    <p>Contact us at: savistar@gmail.com</p>
+  </footer>  
+  <script>
+    function togglePopup1() { 
+      $("#content1").toggle(); 
+    } 
+    function togglePopup2(){
+      $("#content2").toggle(); 
+    }
+    function togglePopup3(){
+      $("#content3").toggle(); 
+    }
+    function togglePopup4(){
+      $("#content4").toggle(); 
+    }
+   </script>
+<script src="index.js"></script>
 </body>
 </html>
