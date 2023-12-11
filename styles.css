@@ -27,7 +27,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 9998;
   transition: all 0.5s;
 }
 
@@ -38,7 +38,7 @@ ul.navbar {
   display: inline-block;
 }
 
-li {
+.savi {
   display: inline-block;
   margin: 0 10px;
 }
@@ -86,7 +86,7 @@ a:visited {
       text-align: center;
       text-indent: 20px;
   }
-  li {
+  .savi {
       display: block;
       margin: 10px 0;
 
@@ -210,7 +210,8 @@ img {vertical-align: middle;}
   text-decoration: none;
   display: inline-block;
   font-size: 13px;
-  margin: 4px 2px;
+  margin: 20px 2px;
+  margin-bottom: 0px;
   cursor: pointer;
 }
 .para2{

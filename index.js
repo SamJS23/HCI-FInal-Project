@@ -34,7 +34,7 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
   var content = document.querySelector('#second');
   var position = content.getBoundingClientRect().top;
-  if (position < window.innerHeight - 60 ) {
+  if (position < window.innerHeight - 50 ) {
       content.classList.add('fadeRight');
   }
 });
@@ -58,4 +58,28 @@ window.addEventListener('scroll', function () {
   if (position < window.innerHeight - 70) {
       content.classList.add('fadeIn');
   }
+});
+document.querySelector('#togglePopup1').addEventListener("click", function(){
+  document.querySelector("#popup1").classList.add("active");
+});
+document.querySelector('#close1').addEventListener("click", function(){
+  document.querySelector("#popup1").classList.remove("active");
+});
+document.querySelector('#togglePopup2').addEventListener("click", function(){
+  document.querySelector("#popup2").classList.add("active");
+});
+document.querySelector('#close2').addEventListener("click", function(){
+  document.querySelector("#popup2").classList.remove("active");
+});
+document.querySelector('#togglePopup3').addEventListener("click", function(){
+  document.querySelector("#popup3").classList.add("active");
+});
+document.querySelector('#close3').addEventListener("click", function(){
+  document.querySelector("#popup3").classList.remove("active");
+});
+document.querySelector('#togglePopup4').addEventListener("click", function(){
+  document.querySelector("#popup4").classList.add("active");
+});
+document.querySelector('#close4').addEventListener("click", function(){
+  document.querySelector("#popup4").classList.remove("active");
 });
