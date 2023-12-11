@@ -128,9 +128,13 @@
 @media only screen and (max-width: 768px) {
 .button{
     font-size: 2px;
-    margin: 0.5;
+    margin: 0.5px;
     width: 25%;
+    height: auto;
     display: inline-block;
     padding: 4px;
+}
+.near-container{
+    padding: 0.75rem 1.5rem;
 }
 }
