@@ -21,12 +21,12 @@
 }
 
 .near .heading {
-    font-size: 3rem;
+    font-size: 3vw;
     color: #2F281E;
 }
 
 .near .para {
-    font-size: 15px; 
+    font-size: 1vw; 
     margin-top: 3%; 
     margin-right: 15px;
 }
@@ -50,9 +50,9 @@
 .content { 
     position: absolute; 
     top: 50%; 
-    font-size: 15px;
+    font-size: 1vw;
     left: 50%; 
-    width: 1250px; 
+    width: 95%; 
     height: 520px; 
     background-color: white; 
     border-style: solid;
@@ -61,6 +61,7 @@
     z-index: 1; 
     display: none; 
 } 
+
 #content1{
     transform: translate(-50%, 70%); 
 }
@@ -86,4 +87,50 @@
     line-height: 27px;
     text-align: center;
     border-radius: 50%;
+}
+.one{
+    animation-delay: 1s;
+}
+.two{
+    animation-delay: 0.5s;
+}
+.animate{
+    animation-duration: 2s;
+    animation-fill-mode:both;
+}
+
+@keyframes fadeLeft{
+    from{
+        opacity: 0;
+        transform: translate3d(-100%,0,0);
+    }
+    to{
+        opacity:1;
+        transform: none
+    }
+}
+.fadeLeft{
+    animation-name: fadeLeft;
+}
+@keyframes fadeRight{
+    from{
+        opacity: 0;
+        transform: translate3d(100%,0,0);
+    }
+    to{
+        opacity:1;
+        transform: none
+    }
+}
+.fadeRight{
+    animation-name: fadeRight;
+}
+@media only screen and (max-width: 768px) {
+.button{
+    font-size: 2px;
+    margin: 0.5;
+    width: 25%;
+    display: inline-block;
+    padding: 4px;
+}
 }

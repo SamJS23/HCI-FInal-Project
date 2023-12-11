@@ -24,3 +24,38 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+window.addEventListener('scroll', function () {
+  var content = document.querySelector('#first');
+  var position = content.getBoundingClientRect().top;
+  if (position < window.innerHeight) {
+      content.classList.add('fadeLeft');
+  }
+});
+window.addEventListener('scroll', function () {
+  var content = document.querySelector('#second');
+  var position = content.getBoundingClientRect().top;
+  if (position < window.innerHeight - 60 ) {
+      content.classList.add('fadeRight');
+  }
+});
+window.addEventListener('scroll', function () {
+  var content = document.querySelector('#third');
+  var position = content.getBoundingClientRect().top;
+  if (position < window.innerHeight - 65 ) {
+      content.classList.add('fadeLeft');
+  }
+});
+window.addEventListener('scroll', function () {
+  var content = document.querySelector('#fourth');
+  var position = content.getBoundingClientRect().top;
+  if (position < window.innerHeight - 65 ) {
+      content.classList.add('fadeRight');
+  }
+});
+window.addEventListener('scroll', function () {
+  var content = document.querySelector('#main1');
+  var position = content.getBoundingClientRect().top;
+  if (position < window.innerHeight - 70) {
+      content.classList.add('fadeIn');
+  }
+});
