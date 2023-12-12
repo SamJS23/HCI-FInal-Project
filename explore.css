@@ -72,7 +72,6 @@ body {
 .near .para {
     font-size: 1.5rem; 
     margin-top: 3%; 
-    margin-left: 15px; 
 }
 
 .near .hr {
@@ -147,4 +146,14 @@ body {
     width: 90%;
     height: 100%;
     border-radius: 3%;
+}
+
+h1{
+  font-family: "Poppins";
+  font-size: 2.5vw;
+}
+
+h2{
+  font-size: 1.5vw;
+  font-family: "Poppins";
 }
