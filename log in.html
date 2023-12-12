@@ -11,7 +11,7 @@
       <a id="sav" href="index.html">Savistar</a>
       
       <ul class="navbar">
-        <li class="savi"><a> Explore</a></li>
+        <li class="savi"><a href="explore.html"> Explore</a></li>
         <li class="savi"><a href="rooms.html"> Rooms </a></li>
         <li class="savi"><a>Booking </a></li>
         <li class="savi"><a>Search</a></li>
@@ -23,7 +23,7 @@
     
 <form action="/action_page.php">
   <div class="container">
-    <h1> Log In </h1>
+    <h1> Sign In </h1>
     <hr>
     <label for="email"><b>Username</b></label>
     <input type="text" placeholder="Enter Email" name="usernname" id="username" required>
@@ -32,10 +32,15 @@
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
 
-    <button type="submit" class="registerbtn">Log In</button>
+    <button type="submit" class="registerbtn" onclick="SignIn()">Sign In</button>
  
     <p class="sign">Don't have an account? <a class="form" href="register.html" style="color:dodgerblue;">Register</a>.</p>
   </div>
 </form>
+<script>
+function SignIn() {
+  alert("I am an alert box!");
+}
+</script>
 </body>
 </html>

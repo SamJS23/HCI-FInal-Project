@@ -34,7 +34,7 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
   var content = document.querySelector('#second');
   var position = content.getBoundingClientRect().top;
-  if (position < window.innerHeight - 40 ) {
+  if (position < window.innerHeight - 50 ) {
       content.classList.add('fadeRight');
   }
 });
