@@ -36,11 +36,27 @@
     <hr>
     <p>By creating an account you agree to our <a class="form" href="#" style="color:dodgerblue;">Terms & Conditions</a>.</p>
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit" class="registerbtn" onclick="register()">Register</button>
  
-    <p class="sign">Already have an account? <a class="form" href="log in.html" style="color:dodgerblue;">Sign in</a>.</p>
+    <p class="sign">Already have an account? <a class="form" href="sign in.html" style="color:dodgerblue;">Sign in</a>.</p>
   </div>
 </form>
+<script>
+  function register() {
+    var email = document.getElementById("email").value;
+    var user = document.getElementById("Username").value;
+    var pass = document.getElementById("psw").value;
+    var repeat = document.getElementById("psw-repeat").value;
+  
+  if (email !== '' && user !== '' && pass !== '' && repeat !== '') {
+    alert("You have registered a new account!");
+  } else {
+  alert("Please input email, username, and password!");
+}
+  
+  
+  }
+</script>
 
 </body>
 </html>
