@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <style>
-       h1{
+       h1, h3{
         font-family: "Poppins";
       }
       p{
@@ -18,6 +18,8 @@
       }
 </style>
 <body>
+
+    <section> <!--Navbar-->
     <nav>
         <div class="navigation">
           <a id="sav" href="index.html">Savistar</a>
@@ -32,7 +34,9 @@
           </ul>
         </div>
       </nav>
-
+    </section>
+    
+    <section><!--Main Desc-->
     <div class="main-container">
     <img src="city.jpg" alt="">
     </div>
@@ -41,9 +45,11 @@
         <h1>Discover Central Jakarta From the Heart of the Business</h1>
         
     </div>
-
+    </section>
+    
+    <section>
     <div class="desc-container">
-        <p>Located in ___, Savistar Hotel resides in the epicenter of Jakarta's bustling downtown. Discover the legendary museum, the mighty Nasional Monument and parks, all situated nearby this Business
+        <p>Nestled in the heart of Jakarta's bustling business district, Savistar hotel offers a central perch for both business and leisure travelers. Enjoy modern comfort and breathtaking city views from our accommodations. Whether you're here for business or exploration, our prime location provides easy access to iconic landmarks, shopping, and culinary delights. Immerse yourself in the dynamic energy of Central Jakarta, where business meets leisure seamlessly at our doorstep.
             
         </p>
     </div>
@@ -54,7 +60,7 @@
                 <h1 class="heading"> Near Our Hotel</h1>
                 <hr class="hr">
                 <p class="para">
-                   Our Hotel is in the heart of the bustling city center so you can enjoy activities from all ranges of the spectrum</p>
+                   Our Hotel is in the heart of the bustling city center so you can enjoy activities from all ranges of the spectrum. From shopping centres to sports hall and museums.</p>
             </div>
             <div class="monas-image-container">
                 <img src="monas.png">
@@ -66,16 +72,106 @@
     <div class="near-container">
         <div class="location-image-container">
             <img src="location.png">
-            </div>
+            </div> 
              <div class="near">
-                <h1 class="heading"> Royal Palace</h1>
+                <h1 class="heading">Our Location</h1>
                 <hr class="hr">
                 <p class="para">
-                    Step into the realm of ultimate luxury at Savistar Hotel's Royal Palace, an opulent sanctuary designed for the most discerning travelers seeking an extraordinary experience. Every element of this exclusive retreat is crafted to immerse you in unparalleled comfort and sophistication.
+                    Jl. Jenderal Sudirman, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270
                 </p>
     </div>    
-            
+   </section> 
+    
+   
+   <!--Location Accordion-->
+   <h1 class="accordion-heading">Additional Information</h1>
+   <hr class="hr">
+    <section class="accordion-container">
+        <div class="faq">
+            <div class="question">
+                <h3>Nearest Airport </h3>
+  
+          <svg width="25" height="15" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="answer">
+          <p>
+           The nearest airport to our establishment is the Soekarno-Hatta International Airport. Airport code : CGK
+          </p>
+  
+        </div>
+       </div>
+    </section>
 
+    <section class="accordion-container">
+        <div class="faq">
+            <div class="question">
+                <h3>Airport Arrival </h3>
+  
+          <svg width="25" height="15" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="answer">
+          <p>
+           We have a dedicated hands on Airport Representative to welcome you 
+           upon arrival at Soekarno-Hatta International Airport.
+          </p>
+  
+        </div>
+       </div>
+    </section>
+
+    <section class="accordion-container">
+        <div class="faq">
+            <div class="question">
+                <h3>Place of worship</h3>
+  
+          <svg width="25" height="15" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="answer">
+          <p>
+           Savistar Hotel provides in-house praying room for all 6 official 
+           recognized religion of Indonesia.
+          </p>
+  
+        </div>
+       </div>
+    </section>
+
+    <section class="accordion-container">
+        <div class="faq">
+            <div class="question">
+                <h3>Parking</h3>
+  
+          <svg width="25" height="15" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="answer">
+          <p>
+            Valet and self parking options are available, including complimentary parking for in house guests.
+          </p>
+  
+        </div>
+       </div>
+    </section>
+      <!--Java Script for location-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function() {
+       const faqs = $(".faq");
+
+       faqs.each(function() {
+           $(this).click(function() {
+               $(this).toggleClass("active");
+           });
+       });
+   });
+       </script>
 </div>
 </body>
 </html>
