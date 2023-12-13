@@ -124,17 +124,17 @@ body {
     font-size: 14px;
     text-decoration: none;
   }
-  a:hover {
+  .navigation a:hover {
     color: black;
     background-color: transparent;
     text-decoration: underline;
   }
-  a:active {
+  .navigation a:active {
     color: black;
     background-color: transparent;
     text-decoration: underline;
   }
-  a:visited {
+  .navigation a:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;

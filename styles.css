@@ -49,17 +49,17 @@ a {
   font-size: 14px;
   text-decoration: none;
 }
-a:hover {
+.navigation a:hover {
   color: black;
   background-color: transparent;
   text-decoration: underline;
 }
-a:active {
+.navigation a:active {
   color: black;
   background-color: transparent;
   text-decoration: underline;
 }
-a:visited {
+.navigation a:visited {
   color: black;
   background-color: transparent;
   text-decoration: none;
@@ -219,9 +219,7 @@ img {vertical-align: middle;}
   font-family:Georgia, 'Times New Roman', Times, serif;
   color: #333;
 }
-.one{
-  animation-delay: 1s;
-}
+
 .animate{
   animation-duration: 2s;
   animation-fill-mode:both;

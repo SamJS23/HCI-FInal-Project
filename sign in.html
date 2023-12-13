@@ -21,7 +21,7 @@
     </div>
   </nav>
     
-<form action="/action_page.php">
+<form>
   <div class="container">
     <h1> Sign In </h1>
     <hr>
@@ -39,7 +39,16 @@
 </form>
 <script>
 function SignIn() {
-  alert("I am an alert box!");
+  var x = document.getElementById("username").value;
+  var y = document.getElementById("psw").value;
+
+if (x !== '' && y !== '') {
+  alert("You have been signed into your account!");
+} else {
+  alert("Please input username and password!");
+}
+
+
 }
 </script>
 </body>
