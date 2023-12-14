@@ -47,6 +47,7 @@
           <option value="Jade">Jade Palace</option>
           </select> 
           <hr>
+          
           <div>
             <label for="amount">Number of Rooms</label>
             <input type="number" id="amount" name="amount" required>
@@ -56,9 +57,19 @@
             <input type="number" id="amount" name="amount" required>
           </div>
           <hr>
-          
-          <button type="submit" class="registerbtn" onclick="SignIn()">Sign In</button>
-       
+
+          <div>
+            <label for="checkin">Check In</label>
+            <input type="date" id="checkin" name="checkin">
+          </div>
+
+          <div>
+            <label for="checkout">Check Out</label>
+            <input type="date" id="checkout" name="checkout">
+          </div>
+          <a href="booking1.html">
+          <button>Sign In</button>
+          </a> 
           <p class="sign">Don't have an account? <a class="form" href="register.html" style="color:dodgerblue;">Register</a>.</p>
         </div>
       </form>
