@@ -1,0 +1,90 @@
+body{
+    margin-top: 15px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+.Rooms{
+    border: 1px solid  #333;
+    border-radius: 5px;
+    height: 200px;
+    width: 95%;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(66, 65, 65, 0.598);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.stars{
+    color:#FFD700;
+    font-size: 1vw;
+}
+.Rooms img{
+    border-radius: 5px;
+    object-fit: cover;
+    height: 100%;
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+}
+.vl {
+    border-left: 1px solid #333;
+    float: right;
+    height: 200px;
+    margin-right: 200px;
+  }
+  .Rooms > span{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+  }
+  .prop{
+    border: 1px solid  #333;
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    padding: 2px;
+    float: left;
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  #RO{
+    margin-bottom: 100px;
+  }
+  li.footersavi {
+    display: inline-block;
+    margin: 0 15px
+  }
+  .all{
+    margin-left: 15px;
+  }
+
+.avail{
+    margin-top: 60px;
+    font-size: 1.5vw;
+}
+.prop{
+    font-size: 1vw;
+}
+span{
+    font-size: 1.5vw;
+}
+.offer{
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 616px) {
+    .vl {
+        border-left: 1px solid #333;
+        float: right;
+        height: 100px;
+        margin-right: 100px;
+      }
+      .Rooms{
+        height: 100px;
+      }
+      .avail{
+        margin-top: 20px;
+      }
+}
