@@ -167,6 +167,20 @@ img {vertical-align: middle;}
     width: 100%;
   }
 }
+.col-3{
+  padding-left:20px;
+  padding-right: 20px;
+}
+.img {
+  height: 700px;
+  background-image: url('food.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  background-attachment: fixed ;
+  margin-bottom: 50px;
+}
+
 .para1{
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
