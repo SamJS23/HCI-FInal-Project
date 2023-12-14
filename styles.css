@@ -178,7 +178,7 @@ img {vertical-align: middle;}
   background-position: center;
   background-size: cover; 
   background-attachment: fixed ;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .para1{
@@ -291,6 +291,83 @@ img {vertical-align: middle;}
     margin-bottom: 5px;
 }
 }
+.container{
+  position:relative;
+  perspective: 1000px;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .slide-container .slide{
+
+  background-color:  #fff;
+  box-shadow: 0 5px 10px #3337;
+  width: 750px;
+  padding: 20px;
+  margin: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.container .slide-container .slide .user{
+  display: flex;
+  align-items: center;
+}
+
+.container .slide-container .slide img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.container .slide-container .slide .user .user-info .stars i{
+  color:#FFD700;
+
+}
+.container .slide-container .slide .text{
+  color:#333;
+  font-size: 14px;
+  padding-top: 15px;
+}
+.container .slide-container{
+  display:none;
+}
+.container .slide-container.act{
+  display:block;
+}
+.container #next,
+.container #prev{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.container #next{
+  right:0px;
+  margin-right: 5px;
+}
+.container #prev{
+  left:0px;
+  margin-left: 5px;
+}
+.review{
+  margin-top:125px;
+  margin-bottom: 125px;;
+}
+@media screen and (max-width: 768px) {
+  .container .slide-container .slide{
+    width: 400px;
+  }
+}
+
 
 
 
