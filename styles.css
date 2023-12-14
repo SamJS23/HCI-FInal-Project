@@ -369,6 +369,12 @@ img {vertical-align: middle;}
 }
 
 
+/* Fix github desktop bug*/
+li.footersavi {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 
 
 
