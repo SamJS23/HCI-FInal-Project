@@ -251,10 +251,7 @@ img {vertical-align: middle;}
 }
 }
 @media screen and (max-width: 768px) {
-  .responsive {position: relative;}
-.responsive #sav{
-  display: block;
-}
+.responsive {position: relative;}
 .nav{
   line-height: normal;
   height:auto;
