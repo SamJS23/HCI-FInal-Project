@@ -200,6 +200,7 @@ img {vertical-align: middle;}
   animation-duration: 2s;
   animation-fill-mode:both;
 }
+
 @keyframes fadeIn{
   from{
       opacity: 0;
@@ -250,7 +251,7 @@ img {vertical-align: middle;}
 }
 }
 @media screen and (max-width: 768px) {
-.responsive {position: relative;}
+  .responsive {position: relative;}
 .responsive #sav{
   display: block;
 }
@@ -279,8 +280,6 @@ img {vertical-align: middle;}
     margin-bottom: 5px;
 }
 }
-
-
 
 
 
