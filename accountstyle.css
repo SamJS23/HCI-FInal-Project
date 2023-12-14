@@ -17,13 +17,14 @@ body {
     box-sizing: border-box;
   }
   
-  /* Add padding to containers */
   .container {
-    margin: 50px auto; /* Center the container and add some space from the top */
+    margin: 50px auto; 
     max-width: 600px;
     padding: 30px;
-    background-color: white;
-    border-radius: 10px; /* Optional: Add rounded corners */
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 10px; 
   }
   
 

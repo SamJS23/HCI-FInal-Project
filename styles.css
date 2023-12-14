@@ -16,6 +16,9 @@ h1{
 #sav {
   font-size: 33px;
 }
+hr{
+  display: none;
+}
 
 nav {
   background: #fff;
@@ -65,33 +68,6 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-
-  #sav{
-    display: block;
-    text-align: center;
-    text-indent: 5px;
-    padding-top: 15px;
-  }
-  nav{
-    height: fit-content;
-    line-height: unset;
-    position: static;
-    padding-bottom: 15px;
-    border-bottom: 3px solid grey;
-  }
-
-  ul.navbar {
-      display: block;
-      text-align: center;
-      text-indent: 20px;
-  }
-  .savi {
-      display: block;
-      margin: 10px 0;
-
-  }
-}
 
 
 
@@ -260,6 +236,48 @@ img {vertical-align: middle;}
 }
 .fadeRight{
   animation-name: fadeRight;
+}
+.icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .savi {display: none;}
+  .navbar a.icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+}
+@media screen and (max-width: 768px) {
+.responsive {position: relative;}
+.responsive #sav{
+  display: block;
+}
+.nav{
+  line-height: normal;
+  height:auto;
+  position: static;
+}
+.responsive ul.navbar {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.responsive .savi {
+  float: none;
+  display: block;
+  text-align: left;
+  padding: unset;
+  margin-right: 5px;
+}
+.responsive hr {
+
+    display: block;
+    border: 1px solid black; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 }
 
 
