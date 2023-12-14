@@ -367,6 +367,21 @@ img {vertical-align: middle;}
     width: 400px;
   }
 }
+@media screen and (max-width: 557px) {
+  .container .slide-container .slide{
+    width: 225px;
+  }
+  .container .slide-container .slide .text{
+    font-size: 10px;
+  }
+  .container .slide-container .slide .user .user-info .stars i{
+    font-size: 10px;
+  
+  }
+
+
+
+}
 
 
 /* Fix github desktop bug*/
