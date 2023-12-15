@@ -2,9 +2,18 @@ body{
     font: "Poppins";
     display: flex;
 }
+.back{
+    border: 0px;
+    top:15px;
+    left: 15px;
+    position: absolute;
+    font-size: 20px;
+    background-color: white;
+}
 .container {
     width: 89%;
     margin: 5px;
+    margin-top: 50px;
     padding: 30px;
     color:whitesmoke;
     backdrop-filter: blur(16px) saturate(180%);
@@ -53,7 +62,7 @@ textarea {
 
 
 .info-box{
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 30px;
     width: 30%;
     margin: 5px;

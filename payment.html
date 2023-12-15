@@ -8,16 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Payment</title>
-</head>
-<style>
-     h1, h2, label{
-        font-family: "Poppins";
-      }
-      p, fieldset{
-        font-family: "Poppins";
-      }
+  <style>
+    h1, h2, label{
+      font-family: "Poppins";
+    }
+    p, fieldset{
+      font-family: "Poppins";
+    }
 </style>
+
+</head>
+
+
 <body>
+<button onclick="history.back()" class="fas fa-chevron-left back"></button>
 <div>
     <form>
       <div class="container">
@@ -64,7 +68,7 @@
        <label for="Cc"><b>Credit Card</b></label>
        <input type="text" placeholder="Enter Credit Card" name="CC" id="CC" required>
 
-       <p>X Amount due in 3 Hours (Local Time). Please provide valid payment method</p>
+       <p> Payment due in 3 Hours (Local Time). Please provide valid payment method</p>
 
        <hr>
 
@@ -94,23 +98,24 @@
 </div>
 
     
-  <div class="info-box">
+  <div class="info-box" style="margin-top: 50px;">
     <h1>Your Stay</h1>
     <p> Check-in  : After 2:00 PM</p>
     <p> Check-out : Before 12:00 PM</p>
     <hr>
 
-    <h2>Tue, 19 Dec, 2023 - Fri, 22 Dec, 2023</h2>
-    <h2>1 Adult</h2>
+    <h2>Check in date: </br> <span id=checkindate> </span> </h2>
+    <h2>Check out date: </br> <span id=checkoutdate></span></h2>
+    <h2><span id="people"></span> Adult(s)</h2>
 
-    <p>Royal Oasis Palace</p>
-    <p>3 Nights</p>
+    <p id="roomtype">Royal Oasis Palace</p>
+    <p> <span id ="rooms"></span> Rooms</p>
+    <p><span id = nights></span> Nights</p>
 
-    <p> Taxes and Fees                            IDR XX</p>
 
     <hr>
 
-    <h1> Total:  IDR 11, 600, 000</h1>
+    <h1> Total: </br>IDR <span id="price"> </span></h1>
 
     <hr>
 
@@ -118,7 +123,47 @@
 
 
   </div>
+  <script> 
+    const rooms = localStorage.getItem('rooms');
+    const checkin = localStorage.getItem('check-in');
+    const checkout = localStorage.getItem('check-out');
+    const guests = localStorage.getItem('guests');
+    const roomtype = localStorage.getItem('selectedRoom');
+    
+    document.getElementById("rooms").textContent = rooms;
+    document.getElementById("checkindate").textContent = checkin;
+    document.getElementById("checkoutdate").textContent = checkout;
+    document.getElementById("people").textContent = guests;
+    document.getElementById("roomtype").textContent = roomtype;
 
+    
+
+var date1 = new Date(checkin);
+var date2 = new Date(checkout);
+ 
+
+var Difference_In_Time = date2.getTime() - date1.getTime();
+
+var nights = Math.round(Difference_In_Time / (1000 * 3600 * 24));
+
+document.getElementById("nights").textContent = nights;
+
+if (roomtype == "Royal Oasis Palace"){
+  var payment = 3000000 * nights * rooms;
+  document.getElementById("price").textContent = payment.toLocaleString();
+} else if (roomtype == "Oasis Palace"){
+  var payment = 2500000 * nights * rooms;
+  document.getElementById("price").textContent = payment.toLocaleString();
+} else if (roomtype == "Imperial Palace"){
+  var payment = 1700000 * nights * rooms;
+  document.getElementById("price").textContent = payment.toLocaleString();
+} else if(roomtype == "Jade Palace"){
+  var payment = 1500000 * nights * rooms;
+  document.getElementById("price").textContent = payment.toLocaleString();
+} else{
+  document.getElementById("price").textContent = "ERROR";
+}
+    </script>
 
 
 

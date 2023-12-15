@@ -8,20 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Booking</title>
-    <script>
-        function RoyalOasis(){
-            window.location="payment.html";
-        }
-        function RoyalPalace(){
-            window.location="payment.html";
-        }
-        function ImperialPalace(){
-            window.location="payment.html";
-        }
-        function JadePalace(){
-            window.location="payment.html";
-        }
-    </script>
+   
     <style>
         h3{font-size: 20px;}
         h2{font-size: 25px;}
@@ -47,7 +34,7 @@
     <button onclick="history.back()" class="fas fa-chevron-left"></button>
     <div class="all">
     <h2>Available Rooms</h2>
-    <div id="ROP" onclick="RoyalOasis()">
+    <div id="ROP" data-value="Royal Oasis Palace" type="submit" onclick="getRoomData('ROP')">
     <div class="Rooms col-12"> 
         <img src="room type 1.jpg"> 
             <div class="vl"></div>
@@ -66,12 +53,12 @@
     <div class="prop"> Free Wi-Fi</div>
     <div class="prop"> Jacuzzi</div>
     <div class="avail">
-        Rooms Available: 4</br>
+        Rooms Available: <span id="room">4</span></br>
         Floors Available: Floor 1, 2, 5, 8</div>
-        <span>Rp. 3.000.000/Night/Room</span>
+        <span>Rp. 3,000,000/Night/Room</span>
     </div>
     </div>
-    <div id="RP" onclick="RoyalPalace()">
+    <div id="RP" data-value="Oasis Palace" type="submit" onclick="getRoomData('RP')">
         <div class="Rooms col-12"> 
             <img src="room type 2.jpg"> 
                 <div class="vl"></div>
@@ -92,10 +79,10 @@
         <div class="avail">
             Rooms Available: 7</br>
             Floors Available: Floor 3, 4, 9</div>
-            <span>Rp. 2.500.000/Night/Room</span>
+            <span>Rp. 2,500,000/Night/Room</span>
         </div>
         </div>
-        <div id="Imperial" onclick="ImperialPalace()">
+        <div id="Imperial" data-value="Imperial Palace" type="submit" onclick="getRoomData('Imperial')">
         <div class="Rooms col-12"> 
             <img src="room type 3.jpg"> 
                 <div class="vl"></div>
@@ -116,10 +103,10 @@
         <div class="avail">
             Rooms Available: 8</br>
             Floors Available: Floor 6, 7, 10</div>
-            <span>Rp. 1.700.000/Night/Room</span>
+            <span>Rp. 1,700,000/Night/Room</span>
         </div>
         </div>
-        <div id="Jade" onclick="JadePalace()">
+        <div id="Jade" data-value="Jade Palace" type="submit" onclick="getRoomData('Jade')">
         <div class="Rooms col-12"> 
             <img src="room type 2.jpg"> 
                 <div class="vl"></div>
@@ -141,7 +128,7 @@
             Rooms Available: 5</br>
             Floors Available: Floor 11, 12, 13
             </div>
-            <span>Rp. 1.500.000/Night/Room</span>
+            <span>Rp. 1,500,000/Night/Room</span>
         </div>
         </div>
     </div>
@@ -158,5 +145,17 @@
             <p style="margin-bottom: 20px;">&copy; 2023 Savistar. All rights reserved.</p>
             <p>Contact us at: savistar@gmail.com</p>
           </footer>
+          <script>
+            function getRoomData(roomId) {
+                var roomElement = document.getElementById(roomId);
+
+                var roomValue = roomElement.getAttribute("data-value");
+
+                localStorage.setItem("selectedRoom", roomValue);
+
+       
+                window.location.href = "payment.html";
+        }
+        </script>
 </body>
 </html>

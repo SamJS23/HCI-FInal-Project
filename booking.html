@@ -15,7 +15,6 @@
     <nav>
         <div class="navigation">
           <a id="sav" href="index.html">Savistar</a>
-          
           <ul class="navbar">
             <li class="savi"><a href="explore.html"> Explore</a></li>
             <li class="savi"><a href="rooms.html"> Rooms </a></li>
@@ -29,25 +28,18 @@
     
 
     <div>
-      <form>
+      <form id="myform">
         <div class="container">
           <h1> Booking </h1>
           <hr>
-          <label  for="rooms" id="inlinelable">Room Type </label>
-          <select name="Rooms" id="rooms">
-          <option value="royalo">Royal Oasis Palace</option>
-          <option value="royal">Royal Palace</option>
-          <option value="imperial">Imperial Palace</option>
-          <option value="Jade">Jade Palace</option>
-          </select>
           
           <div>
             <label for="amount">Number of Rooms</label>
-            <input type="number" id="amount" name="amount" required>
+            <input type="number" id="rooms" name="amount" required>
           </div>
           <div>
             <label for="amount">Number of Guests</label>
-            <input type="number" id="amount" name="amount" required>
+            <input type="number" id="guests" name="amount" required>
           </div>
           <hr>
 
@@ -61,13 +53,33 @@
             <input type="date" id="checkout" name="checkout">
           </div>
           <hr>
-          <a href="booking1.html">
-          <button type="button" class="btn" onclick="location.href='booking1.html'">Check Availability</button>
-          </a> 
+          <button type="submit" class="btn">Check Availability</button>
           <p class="sign">Don't have an account? <a class="form" href="register.html" style="color:dodgerblue;">Register</a>.</p>
         </div>
       </form>
     </div>
+    <script>
+      const form = document.getElementById('myform');
+      const rooms = document.getElementById('rooms');
+      const guests = document.getElementById('guests');
+      const checkin = document.getElementById('checkin');
+      const checkout = document.getElementById('checkout');
+      
+      form.addEventListener("submit",function(e){
+        e.preventDefault();
+        const roomsvalue = rooms.value;
+        const checkinvalue = checkin.value;
+        const checkoutvalue = checkout.value;
+        const guestvalue = guests.value;
+
+        localStorage.setItem('rooms', roomsvalue);
+        localStorage.setItem('check-in', checkinvalue);
+        localStorage.setItem('check-out', checkoutvalue);
+        localStorage.setItem('guests', guestvalue);
+
+        window.location.href="booking1.html";
+      })
+    </script>
 
     
 
