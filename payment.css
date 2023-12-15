@@ -4,10 +4,10 @@ body{
 }
 .back{
     border: 0px;
-    top:15px;
-    left: 15px;
+    top:10px;
+    left: 10px;
     position: absolute;
-    font-size: 20px;
+    font-size: 25px;
     background-color: white;
 }
 .container {
@@ -15,10 +15,11 @@ body{
     margin: 5px;
     margin-top: 50px;
     padding: 30px;
-    color:whitesmoke;
+    color: #333;
+    border:1px solid black;
     backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(11, 15, 13, 0.582);
     justify-content: center;
+    background-color: #D3D3D3;
     align-items: left ;
     position: left;
     
@@ -66,10 +67,11 @@ textarea {
     padding: 30px;
     width: 30%;
     margin: 5px;
-    color:whitesmoke;
+    color:#333;
     backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(11, 15, 13, 0.582);
+    border: 1px solid black;
     justify-content: center;
+    background-color: #D3D3D3;
     align-items: left ;
     position: right;
     height: 30%;
