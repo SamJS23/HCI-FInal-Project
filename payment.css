@@ -65,5 +65,19 @@ textarea {
     position: right;
     height: 30%;
     
-  
+    
 }
+
+.btn {
+    background-color: rgba(47, 40, 25, 0.666);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
