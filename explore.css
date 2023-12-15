@@ -231,6 +231,7 @@ a {
 .answer {
   max-height: 0;
   overflow: hidden;
+  max-width: 1000px;
 }
 
 .answer p {
@@ -240,6 +241,7 @@ a {
 }
 .faq.active .answer {
   max-height: 300px;
+  max-width: 1000px;
 
 }
 
@@ -247,6 +249,7 @@ a {
     display: flex;
    justify-content: center;
    padding-top: 20px;
+   
 }
 
 .accordion-heading{
