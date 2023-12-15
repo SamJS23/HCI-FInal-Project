@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Payment</title>
+</head>
+<style>
+     h1, h2, label{
+        font-family: "Poppins";
+      }
+      p, fieldset{
+        font-family: "Poppins";
+      }
+</style>
+<body>
+<div>
+    <form>
+      <div class="container">
+        <h1> Contact Information </h1>
+        
+        <hr>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="usernname" id="username" required>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input id="Male" type="radio" name="male-female" value="male" checked>Male</label>
+            <label><input id="Female" type="radio" name="male-female" value="">Female</label>
+        </fieldset>
+    
+        
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        
+        <label for="pnumber"><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter Phone Number" name="number" id="pnumber" required>
+
+        <hr>
+
+        <h1> Address </h1>
+         
+        <label for="country"><b>Country of Origin</b></label>
+        <input type="text" placeholder="Enter Country" name="country" id="country" required>
+    
+        <label for="addd"><b>Address</b></label>
+        <input type="text" placeholder="Enter Address" name="addd" id="addd" required>
+        
+        <label for="cit"><b>City</b></label>
+        <input type="text" placeholder="Enter City of Residence" name="cit" id="cit" required>
+
+        <hr>
+
+       <h1>Additional Prefences</h1>
+       <textarea id="prf" name="prf" rows="4" placeholder="Additional Preferences"></textarea></td>
+
+       <hr>
+
+       <h1>Payment Information</h1>
+       <label for="Cc"><b>Credit Card</b></label>
+       <input type="text" placeholder="Enter Credit Card" name="CC" id="CC" required>
+
+       <p>X Amount due in 3 Hours (Local Time). Please provide valid payment method</p>
+
+       <hr>
+
+       <h1>Policies</h1>
+
+       <p> Check-in  : After 2:00 PM</p>
+       <p> Check-out : Before 12:00 PM</p>
+
+       <h2>Guarantee Policy</h2>
+       <p>Hotel booking will require 100% deposit fee at the time of booking</p>
+
+       <h2>Cancel Policy</h2>
+       <p>Refund available 1 week before stay date</p>
+
+       <hr>
+
+       <h1>Acknowledgment</h1>
+       <fieldset>
+        <input id="python" type="checkbox" class="progamming" value="python" checked><label for="1">Yes, I would like to receive newsletters and special offers by email</label>
+        <input id="html" type="checkbox" class="progamming" value="html" checked><label for="2"> I agree with the Privacy Terms</label>
+        <input id="css" type="checkbox" class="progamming" value="css" checked><label for="3"> I agree with the Booking Conditions</label>
+        </fieldset>
+        </div>
+   </form>
+</div>
+
+    
+  <div class="info-box">
+    <h1>Your Stay</h1>
+    <p> Check-in  : After 2:00 PM</p>
+    <p> Check-out : Before 12:00 PM</p>
+    <hr>
+
+    <h2>Tue, 19 Dec, 2023 - Fri, 22 Dec, 2023</h2>
+    <h2>1 Adult</h2>
+
+    <p>Royal Oasis Palace</p>
+    <p>3 Nights</p>
+
+    <p> Taxes and Fees                            IDR XX</p>
+
+    <hr>
+
+    <h1> Total:  IDR 11, 600, 000</h1>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+    
+</body>
+</html>

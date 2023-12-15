@@ -1,0 +1,69 @@
+body{
+    font: "Poppins";
+    display: flex;
+}
+.container {
+    width: 89%;
+    margin: 5px;
+    padding: 30px;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    justify-content: center;
+    align-items: left ;
+    position: left;
+    
+}
+  
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+
+  }
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+
+
+fieldset{
+    padding-bottom: 10px;
+}
+
+input [name=etc] {
+    height: 20px;
+}
+
+textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+
+.info-box{
+    margin-top: 10px;
+    padding: 30px;
+    width: 30%;
+    margin: 5px;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    justify-content: center;
+    align-items: left ;
+    position: right;
+    height: 30%;
+    
+  
+}
