@@ -1,1 +1,1 @@
-<h1>Savistar</h1>
+<h1>Savistar - HCI Final Project </h1>
