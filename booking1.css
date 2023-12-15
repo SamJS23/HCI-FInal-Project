@@ -7,6 +7,11 @@ body{
     box-sizing: border-box;
     font-family: "Poppins";
 }
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
 .Rooms{
     border: 1px solid  #333;
     border-radius: 5px;
@@ -33,7 +38,7 @@ body{
     border-left: 1px solid #333;
     float: right;
     height: 200px;
-    margin-right: 200px;
+    margin-right: 300px;
   }
   .Rooms > span{
     position: absolute;
@@ -50,17 +55,14 @@ body{
     font-size: 10px;
     margin-right: 5px;
   }
-  #RO{
-    margin-bottom: 100px;
-  }
   li.footersavi {
     display: inline-block;
     margin: 0 15px
   }
   .all{
-    margin-left: 15px;
+    margin-left: 35px;
+    margin-top: 15px;
   }
-
 .avail{
     margin-top: 60px;
     font-size: 1.5vw;
@@ -79,7 +81,7 @@ span{
         border-left: 1px solid #333;
         float: right;
         height: 100px;
-        margin-right: 100px;
+        margin-right: 130px;
       }
       .Rooms{
         height: 100px;
@@ -87,4 +89,17 @@ span{
       .avail{
         margin-top: 20px;
       }
+}
+.Rooms{
+    transition: transform .2s;
+}
+.Rooms:hover{
+    transform: scale(1.02); 
+}
+button{
+    border: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 2vw;
+    background-color: white;
 }
