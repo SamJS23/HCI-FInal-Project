@@ -24,7 +24,7 @@ body {
 }
 .stars{
     color:#FFD700;
-    font-size: 1vw;
+    font-size: 15px;
 }
 .Rooms img{
     border-radius: 5px;
@@ -65,31 +65,19 @@ body {
   }
 .avail{
     margin-top: 60px;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 .prop{
-    font-size: 1vw;
+    font-size: 15px;
 }
 span{
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 .offer{
-    font-size: 1.5vw;
+    font-size: 15px;
 }
-@media screen and (max-width: 616px) {
-    .vl {
-        border-left: 1px solid #333;
-        float: right;
-        height: 100px;
-        margin-right: 130px;
-      }
-      .Rooms{
-        height: 100px;
-      }
-      .avail{
-        margin-top: 20px;
-      }
-}
+
+
 .Rooms{
     transition: transform .2s;
 }
@@ -103,3 +91,82 @@ button{
     font-size: 2vw;
     background-color: white;
 }
+@media (max-width: 918px) {
+  .avail{
+    margin-top: 60px;
+    font-size: 15px;
+}
+.prop{
+    font-size: 10px;
+}
+span{
+    font-size: 15px;
+}
+.offer{
+    font-size: 15px;
+}
+.vl {
+  border-left: 1px solid #333;
+  float: right;
+  height: 200px;
+  margin-right: 250px;
+}
+.stars{
+  font-size: 10px;
+}
+  }
+
+  @media (max-width: 623px) {
+    .avail{
+      margin-top: 60px;
+      font-size: 10px;
+  }
+  .prop{
+      font-size: 5px;
+  }
+  span{
+      font-size: 10px;
+  }
+  .offer{
+      font-size: 10px;
+  }
+  .vl {
+    border-left: 1px solid #333;
+    float: right;
+    height: 150px;
+    margin-right: 150px;
+  }
+  .Rooms{
+    height: 150px;
+  }
+  .stars{
+    font-size: 10px;
+  }
+  }
+  @media (max-width: 497px) {
+    .avail{
+      margin-top: 20px;
+      font-size: 7px;
+  }
+  .prop{
+      font-size: 5px;
+  }
+  span{
+      font-size: 7px;
+  }
+  .offer{
+      font-size: 7px;
+  }
+  .vl {
+    border-left: 1px solid #333;
+    float: right;
+    height: 100px;
+    margin-right: 100px;
+  }
+  .Rooms{
+    height: 100px;
+  }
+  .stars{
+    font-size: 10px;
+  }
+  }
