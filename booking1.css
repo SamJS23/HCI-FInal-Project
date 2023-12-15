@@ -157,6 +157,9 @@ span{
   .offer{
       font-size: 7px;
   }
+  a{
+    color:white
+  }
   .vl {
     border-left: 1px solid #333;
     float: right;
@@ -170,3 +173,7 @@ span{
     font-size: 10px;
   }
   }
+  .footerbar li a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
