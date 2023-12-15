@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='services.css'/>
+
 </head>
 <style>
        h1, h3{
@@ -54,6 +56,63 @@
         </p>
     </div>
     </div>
+    <section id="services" class="guest-services-wrapper">
+      <h2 class="guest-services-title expressive-heading-3">Guest Services</h2>
+      <div class="blue-underline"></div>
+      <div class="guest-services-modal-description ui-body-1 richtext-box NoClass">Services available for our guests </div>
+      <button id="hypSeeAllServices" type="button" data-toggle="modal" class="guest-services-popin-link guestServiceAjaxCall tertiary-button ui-body-3-uppercase" data-content-id="120355" ;">
+        Included
+        <span class="guest-services-arrow visible-xs-inline-block">
+          <svg>
+            <use xlink:href="#right-arrow"></use>
+          </svg>
+        </span>
+      </button>
+      <div class="modal fade guestServicesPopinModal" id="guestServicesPopin" role="dialog" aria-labelledby="hypSeeAllServices" tabindex="-1"></div>
+      <ul class="guest-services-list-wrap NoClass">
+          
+          <li class="col-xs-6">
+              <div class="guest-service-icon">
+                  <img src='bellstaff.png' alt=''/>
+              </div>
+              <span class="guest-service-bar"></span>
+              <div class="guest-service-details ui-body-2">Bell Staff
+                          </div>
+          </li>
+          <li class="col-xs-6">
+              <div class="guest-service-icon">
+                  <img src='concierge.png' alt=''/>
+              </div>
+              <span class="guest-service-bar"></span>
+              <div class="guest-service-details ui-body-2">Concierge
+                          </div>
+          </li>
+          <li class="col-xs-6">
+              <div class="guest-service-icon">
+                  <img src='laundry.png' alt=''/>
+              </div>
+              <span class="guest-service-bar"></span>
+              <div class="guest-service-details ui-body-2">Laundry</div>
+          </li>
+          
+         
+          <li class="col-xs-6">
+              <div class="guest-service-icon">
+                  <img src='transportation.png' alt=''/>
+              </div>
+              <span class="guest-service-bar"></span>
+              <div class="guest-service-details ui-body-2">Transportation</div>
+          </li>
+          
+          <li class="col-xs-6">
+              <div class="guest-service-icon">
+                  <img src='valet-parking.png' alt=''/>
+              </div>
+              <span class="guest-service-bar"></span>
+              <div class="guest-service-details ui-body-2">Valet</div>
+          </li>
+      </ul>
+  </section>
     <div class="info-near">
         <div class="near-container fade-in">
             <div class="near">
