@@ -8,21 +8,21 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
   var content = document.querySelector('#second');
   var position = content.getBoundingClientRect().top;
-  if (position < window.innerHeight - 50 ) {
+  if (position < window.innerHeight) {
       content.classList.add('fadeRight');
   }
 });
 window.addEventListener('scroll', function () {
   var content = document.querySelector('#third');
   var position = content.getBoundingClientRect().top;
-  if (position < window.innerHeight - 65 ) {
+  if (position < window.innerHeight ) {
       content.classList.add('fadeLeft');
   }
 });
 window.addEventListener('scroll', function () {
   var content = document.querySelector('#fourth');
   var position = content.getBoundingClientRect().top;
-  if (position < window.innerHeight - 65 ) {
+  if (position < window.innerHeight) {
       content.classList.add('fadeRight');
   }
 });

@@ -94,7 +94,7 @@ span{
     transition: transform .2s;
 }
 .Rooms:hover{
-    transform: scale(1.02); 
+    transform: scale(1.05); 
 }
 button{
     border: 0px;
