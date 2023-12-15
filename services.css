@@ -19076,7 +19076,7 @@ select.bs-same-dd.form-control {
         font-size: .785em
     }
 
-    #activities h2,#dining h2,#EventAdditionalInformation .section-heading,#events .event-all-info div.event-title,#events h2,#map .section-heading,#reviews h2,.guest-services-wrapper .guest-services-title,.hotel-nearby-wrapper .hotel-nearby-info .nearby-title {
+    #activities h2,#dining h2,#EventAdditionalInformation .section-heading,#events .event-all-info div.event-title,#events h2,#map .section-heading,#reviews h2,.guest-services-wrapper .guest-services-title,.hotel-facilities-wrapper .hotel-facilities-info .facilities-title {
         font-size: 2em
     }
 
@@ -22679,21 +22679,21 @@ span.section-heading-h1:not(span.section-heading-h1.new-headingForSeo) {
     margin: 0
 }
 
-.hotel-nearby-wrapper {
+.hotel-facilities-wrapper {
     max-width: 980px;
     width: 74%;
     padding: 0;
     margin: 65px auto 0
 }
 
-.hotel-nearby-wrapper .hotel-nearby-info {
+.hotel-facilities-wrapper .hotel-facilities-info {
     width: 100%;
     margin: 0 auto;
     text-align: center;
     overflow: hidden
 }
 
-.hotel-nearby-wrapper .hotel-nearby-info .nearby-title {
+.hotel-facilities-wrapper .hotel-facilities-info .facilities-title {
     font-size: 2.5em;
     color: #000;
     line-height: 44px;
@@ -22703,7 +22703,7 @@ span.section-heading-h1:not(span.section-heading-h1.new-headingForSeo) {
     font-weight: 500
 }
 
-.hotel-nearby-wrapper .hotel-nearby-info .nearby-subhead {
+.hotel-facilities-wrapper .hotel-facilities-info .facilities-subhead {
     font-size: .875em;
     color: #393939;
     letter-spacing: .5px;
@@ -22711,35 +22711,35 @@ span.section-heading-h1:not(span.section-heading-h1.new-headingForSeo) {
     margin: 20px 0 40px
 }
 
-.hotel-nearby-wrapper .hotel-nearby-content {
+.hotel-facilities-wrapper .hotel-facility {
     margin: 0 -10%;
     background: #fff;
     box-shadow: -4px 4px 136px -49px rgba(0,0,0,.75)
 }
 
-.hotel-nearby-wrapper .hotel-nearby-content .nearby-hotel-image {
+.hotel-facilities-wrapper .hotel-facility .hotel-facility-image {
     width: 100%;
     max-width: 1180px;
     height: 500px
 }
 
-.hotel-nearby-wrapper .hotel-nearby-content .nearby-hotel-image img {
+.hotel-facilities-wrapper .hotel-facility .hotel-facility-image img {
     width: 100%;
     height: 100%
 }
 
-.hotel-nearby-wrapper .hotel-nearby-details {
+.hotel-facilities-wrapper .hotel-facility-details {
     padding: 15px 25px
 }
 
-.hotel-nearby-wrapper .hotel-nearby-details .nearby-tags {
+.hotel-facilities-wrapper .hotel-facility-details .facility-type {
     font-size: .75em;
     text-transform: uppercase;
     color: #393939;
     letter-spacing: .5px
 }
 
-.hotel-nearby-wrapper .hotel-nearby-details .nearby-hotel-name .nearby-fwd-arrrow {
+.hotel-facilities-wrapper .hotel-facility-details .facility-name .nearby-fwd-arrrow {
     width: 14px;
     height: 17px;
     fill: #393939;
@@ -22747,7 +22747,7 @@ span.section-heading-h1:not(span.section-heading-h1.new-headingForSeo) {
     float: right
 }
 
-.hotel-nearby-wrapper .hotel-nearby-details .nearby-hotel-name,.hotel-nearby-wrapper .hotel-nearby-details .nearby-hotel-name a {
+.hotel-facilities-wrapper .hotel-facility-details .facility-name,.hotel-facilities-wrapper .hotel-facility-details .facility-name a {
     font-size: 1.625rem;
     color: #000;
     text-decoration: none;
@@ -25275,7 +25275,7 @@ ul.simple-pagination {
         padding-left: 15px
     }
 
-    #activities h2,#dining h2,#EventAdditionalInformation .section-heading,#events .event-all-info div.event-title,#events h2,#map .section-heading,#reviews h2,.guest-services-wrapper .guest-services-title,.hotel-nearby-wrapper .hotel-nearby-info .nearby-title {
+    #activities h2,#dining h2,#EventAdditionalInformation .section-heading,#events .event-all-info div.event-title,#events h2,#map .section-heading,#reviews h2,.guest-services-wrapper .guest-services-title,.hotel-facilities-wrapper .hotel-facilities-info .facilities-title {
         font-size: 2em
     }
 
@@ -25537,47 +25537,47 @@ ul.simple-pagination {
         width: auto
     }
 
-    .hotel-nearby-wrapper {
+    .hotel-facilities-wrapper {
         width: 100%;
         padding: 0 10px;
         margin-top: 35px
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-info .nearby-title {
+    .hotel-facilities-wrapper .hotel-facilities-info .facilities-title {
         padding-top: 0
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-info {
+    .hotel-facilities-wrapper .hotel-facilities-info {
         padding: 0 20px
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-info .nearby-subhead {
+    .hotel-facilities-wrapper .hotel-facilities-info .facilities-subhead {
         margin: 20px 0
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-content {
+    .hotel-facilities-wrapper .hotel-facility {
         margin: 0 auto;
         box-shadow: none
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-content .nearby-hotel-image {
+    .hotel-facilities-wrapper .hotel-facility .hotel-facility-image {
         height: 210px
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-details {
+    .hotel-facilities-wrapper .hotel-facility-details {
         padding: 15px 20px
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-details .nearby-hotel-name {
+    .hotel-facilities-wrapper .hotel-facility-details .facility-name {
         margin-top: 5px
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-details .nearby-hotel-name a {
+    .hotel-facilities-wrapper .hotel-facility-details .facility-name a {
         font-size: 1em;
         position: relative
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-details .nearby-hotel-name a span {
+    .hotel-facilities-wrapper .hotel-facility-details .facility-name a span {
         position: absolute;
         right: -10px;
         top: -1px
@@ -26260,11 +26260,11 @@ ul.simple-pagination {
         max-width: 100%
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-info {
+    .hotel-facilities-wrapper .hotel-facilities-info {
         background: #fff
     }
 
-    .hotel-nearby-wrapper .hotel-nearby-bottom {
+    .hotel-facilities-wrapper .hotel-nearby-bottom {
         height: 75px;
         background: #fff;
         margin-bottom: -75px
