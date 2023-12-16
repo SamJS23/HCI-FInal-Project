@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="CSS/payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -114,7 +114,7 @@
         <input id="css" type="checkbox" class="progamming" value="css" checked><label for="3"> I agree with the Booking Conditions</label>
         </fieldset>
 
-        <button type="button" class="btn">Complete Booking</button>
+        <button type="button" class="btn" onclick="Book()">Complete Booking</button>
         </div>
    </form>
 </div>
@@ -185,6 +185,12 @@ if (roomtype == "Royal Oasis Palace"){
 } else{
   document.getElementById("price").textContent = "ERROR";
 }
+ function Book(){
+  alert("Your booking has been completed! Thank you for choosing Savistar!");
+  window.location.href = "index.html";
+
+ }
+
     </script>
 
 
