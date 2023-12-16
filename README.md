@@ -11,7 +11,8 @@
 **Group:** SAV
 
 **Live Link:** https://samjs23.github.io/HCI-Final-Project/
-**Project report and demonstration video:**
+
+**Project Report and Demonstration Video:**
 
 
 ## Purpose of the Prototype:
