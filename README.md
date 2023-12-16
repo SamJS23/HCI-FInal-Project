@@ -78,8 +78,9 @@ The purpose of this prototype is to is to design and develop an user friendly an
 <img src="https://github.com/SamJS23/HCI-Final-Project/assets/144894556/329f560b-69e0-477e-a733-fd157e5cdeec" width = 50% height = 50%>
 
 - Home Page:
+  
+<img src="https://github.com/SamJS23/HCI-Final-Project/assets/144894556/c791959d-3bde-46dd-9f2f-cf0759223102" width = 50% height = 50%>
 
-<img src="https://github.com/SamJS23/HCI-Final-Project/assets/144894556/dd2728ac-29ab-4e57-928b-4c183a945c30" width = 50% height = 50%>
 
 **Desktop Screenshots:**
 
