@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css"> 
-    <link rel="stylesheet" href="rooms.css">
+    <link rel="stylesheet" href="CSS/styles.css"> 
+    <link rel="stylesheet" href="CSS/rooms.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,15 +65,15 @@
   </nav>
   <div class="slideshow-container">
     <div class="mySlides fade">
-      <img src="bathroom.jpg" style="width: 100%;">
+      <img src="Images/bathroom.jpg" style="width: 100%;">
     </div>
     
     <div class="mySlides fade">
-      <img src="hotel1.jpg"  style="width: 100%;">
+      <img src="Images/hotel1.jpg"  style="width: 100%;">
     </div>
     
     <div class="mySlides fade">
-      <img src="jacuzzi.jpeg" style="width:100%">
+      <img src="Images/jacuzzi.jpeg" style="width:100%">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -96,15 +96,15 @@
               Step into a realm of unparalleled luxury with our exquisite Royal Oasis Palace, an indulgent retreat that transcends ordinary expectations. Nestled within Savistar Hotel, this lavishly appointed suite is a celebration of opulence, offering an unparalleled experience for the discerning traveler.
             </p>
             <button class="button" id = "togglePopup1"> More Information </button>
-            <button class="button"> Availability </button>
+            <button class="button" onclick="Book()"> Book Now </button>
         </div>
         <div class="room-image-container">
-            <img src="room type 1.jpg">
+            <img src="Images/room type 1.jpg">
         </div>
     </div>
       <div class="near-container animate col-12" id="second">
         <div class="room-image-container">
-          <img src="room type 2.jpg">
+          <img src="Images/room type 2.jpg">
           </div>
           <div class="near">
               <h1 class="heading"> Royal Palace</h1>
@@ -113,7 +113,7 @@
                 Step into the realm of ultimate luxury at Savistar Hotel's Royal Palace, an opulent sanctuary designed for the most discerning travelers seeking an extraordinary experience. Every element of this exclusive retreat is crafted to immerse you in unparalleled comfort and sophistication.
               </p>
               <button class="button" id= "togglePopup2"> More Information </button>
-              <button class="button"> Availability </button>
+              <button class="button" onclick="Book()"> Book Now </button>
               </div>
               </div>
               <div class="near-container animate col-12" id="third">
@@ -124,15 +124,15 @@
                       Our Imperial Palace Rooms invite you to experience a refined stay in an atmosphere of sophistication. Unwind in a plush king-sized bed and relish the modern amenities. Enjoy the convenience a touch of imperial charm in every detail
                     </p>
                     <button class="button" id="togglePopup3"> More Information </button>
-                    <button class="button"> Availability </button>
+                    <button class="button" onclick="Book()"> Book Now </button>
                 </div>
                 <div class="room-image-container">
-                    <img src="room type 3.jpg">
+                    <img src="Images/room type 3.jpg">
                 </div>
             </div>
             <div class="near-container animate col-12" id="fourth">
               <div class="room-image-container">
-                <img src="room type 4.jpg">
+                <img src="Images/room type 4.jpg">
                 </div>
                 <div class="near">
                     <h1 class="heading"> Jade Palace </h1>
@@ -141,12 +141,12 @@
                       The Jade Palace offer a serene escape with a contemporary twist. Inspired by modern aesthetics and infused with subtle Asian influences, these rooms provide a stylish and comfortable haven. Enjoy a restful night's sleep in your choice of a king or queen-sized bed. Immerse yourself in tranquility and style during your stay.
                     </p>
                     <button class="button" id="togglePopup4"> More Information </button>
-                    <button class="button"> Availability </button>
+                    <button class="button" onclick="Book()"> Book Now </button>
                     </div>
                     </div>
                     </div>
                     <div class="popup" id="popup1">
-                    <img src="room type 1.jpg" class="rt">
+                    <img src="Images/room type 1.jpg" class="rt">
                     <div class="content">
                     <div class="popup-cls-btn" id="close1"> &times; </div>
                     
@@ -221,7 +221,7 @@
                     </div>
                   </div>
                   <div class="popup" id="popup2">
-                    <img src="room type 2.jpg"  class="rt">
+                    <img src="Images/room type 2.jpg"  class="rt">
                     <div class="content">
                     <div class="popup-cls-btn" id="close2"> &times; </div>
                       <h1>Royal Palace</h1>
@@ -295,7 +295,7 @@
                     </div>
                     </div>
                     <div class="popup" id="popup3">
-                      <img src="room type 3.jpg" class="rt">
+                      <img src="Images/room type 3.jpg" class="rt">
                       <div class="content">
                       <div class="popup-cls-btn" id="close3"> &times; </div>
                         <h1>Imperial Palace</h1>
@@ -369,7 +369,7 @@
                       </div>
                       </div>
                       <div class="popup" id="popup4">
-                        <img src="room type 4.jpg" class="rt">
+                        <img src="Images/room type 4.jpg" class="rt">
                         <div class="content">
                         <div class="popup-cls-btn" id="close4"> &times; </div>
                           <h1>Jade Palace</h1>
@@ -456,8 +456,8 @@
     <p>Contact us at: savistar@gmail.com</p>
   </footer>  
 
-<script src="index.js"></script>
-<script src="rooms.js"></script>
+<script src="JavaScript/index.js"></script>
+<script src="JavaScript/rooms.js"></script>
 <script>
     function myFunction() {
   var x = document.getElementById("mynav");

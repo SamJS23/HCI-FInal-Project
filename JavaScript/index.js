@@ -52,6 +52,12 @@ function showS(n) {
   d[Index-1].className += " active";
   
 }
+function Book() {
+  window.location.href = "booking.html";
+}
+function Learn() {
+  window.location.href = "rooms.html";
+}
 window.addEventListener('scroll', function () {
   var content = document.querySelector('#main1');
   var position = content.getBoundingClientRect().top;

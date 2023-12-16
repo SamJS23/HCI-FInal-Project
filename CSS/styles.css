@@ -177,7 +177,7 @@ img {vertical-align: middle;}
 }
 .img {
   height: 700px;
-  background-image: url('food.jpg');
+  background-image: url('../Images/food.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
