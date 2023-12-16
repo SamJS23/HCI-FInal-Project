@@ -77,12 +77,18 @@ a {
 .icon {
   display: none;
 }
+li.footersavi {
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+}
+.footersavi a{color: white;}
 @media screen and (max-width: 768px) {
   .savi {display: none;}
   .navbar a.icon {
     display: block;
     position: absolute;
-    right: 15px;
+    right: 8px;
     top: 15px;
 }
 }
