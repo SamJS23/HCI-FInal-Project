@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savistar Hotel - Privacy Policy</title>
+</head>
+<body>
+  <nav class="nav" id="mynav">
+    <div class="navigation">
+      <a id="sav" href="index.html">Savistar</a>
+      <ul class="navbar">
+        <hr>
+        <li class="savi"><a href="explore.html"> Explore</a></li>
+        <li class="savi"><a href="rooms.html"> Rooms </a></li>
+        <li class="savi"><a href="booking.html">Booking </a></li>
+        <li class="savi"><a href="contact.html">Contact Us</a></li>
+        <li class="savi"><a href="sign in.html">Sign In</a></li>
+        <li class="savi"><a href="register.html"> Register</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <li class=" fa fa-bars"></li>
+        </a>
+        <hr>
+      </ul>
+      
+    </div>
+  </nav>
+  <br>
+<div class="w3-content para1 animate" id="main1">
+  <h1 style="font-family: Poppins; color:black;"> Privacy Policy </h1>
+  <p style="font-size: 22px;"> We are committed to maintaining the accuracy, confidentiality, and security of your personally identifiable information ("Personal Information"). As part of this commitment, our privacy policy governs our actions as they relate to the collection, use and disclosure of Personal Information. </p>
+</div>
+
+
+<footer style="background-color: #333; color: white; padding: 20px; text-align: center;clear:both;">
+  <ul class="footerbar">
+    <li class="footersavi"><a href="termsconditions.html">Terms & Conditions</a></li>
+    <li class="footersavi"><a href="privacypolicy.html">Privacy Policy</a></li>
+    <li class="footersavi"><a href="cookies.html">Cookies</a></li>
+    <li class="footersavi"><a href="FAQ.html">FAQ</a></li>
+    <li class="footersavi"><a href="sitemap.html"> Sitemap </a></li>
+  </ul>
+  <br>
+  <p style="margin-bottom: 20px;">&copy; 2023 Savistar. All rights reserved.</p>
+  <p>Contact us at: savistar@gmail.com</p>
+</footer>  
+
+
+<script src="index.js">
+
+</script>
+<script>
+  let slides = document.querySelectorAll('.slide-container');
+  let index = 0;
+
+  function next(){
+    slides[index].classList.remove('act');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('act');
+  }
+  function prev(){
+    slides[index].classList.remove('act');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('act');
+  }
+  function myFunction() {
+  var x = document.getElementById("mynav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script>
+     
+</body>
+</html>
