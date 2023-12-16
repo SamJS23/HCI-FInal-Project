@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styles.css"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/FAQ.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="JavaScript/FAQ.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savistar Hotel - FAQ</title>
+</head>
+<body>
+  <nav class="nav" id="mynav">
+    <div class="navigation">
+      <a id="sav" href="index.html">Savistar</a>
+      <ul class="navbar">
+        <hr>
+        <li class="savi"><a href="explore.html"> Explore</a></li>
+        <li class="savi"><a href="rooms.html"> Rooms </a></li>
+        <li class="savi"><a href="booking.html">Booking </a></li>
+        <li class="savi"><a href="contact.html">Contact Us</a></li>
+        <li class="savi"><a href="sign in.html">Sign In</a></li>
+        <li class="savi"><a href="register.html"> Register</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <li class=" fa fa-bars"></li>
+        </a>
+        <hr>
+      </ul>
+      
+    </div>
+  </nav>
+  <br><br><br><br><br><br><br><br><br><br>
+  <div id="container2">
+    <div class="FAQ-title"><h3>Frequently Asked Questions</h3></div>
+    <ul class="faq">
+        <li class="q"><i class="ion-chevron-right"></i>At what time can we check into our room?</li>
+        <li class="a"> Customers are expected to arrive for 4PM. We will gladly provide you access to your room earlier if possible.</li>
+        
+        <li class="q"><i class="ion-chevron-right"></i>What is the checkout time?</li>
+        <li class="a">The checkout must be done before 11 am</li>
+        
+        <li class="q"><i class="ion-chevron-right"></i>Is breakfast included in our stay? If so whats the time?</li>
+        <li class="a">Yes, breakfast is offered free to our customer, from 5:30AM to 9:30AM on weekdays and from 6:30AM to 10:30AM on weekends. </li>
+
+        <li class="q"><i class="ion-chevron-right"></i>Can I request an additional bed for a third person in a double occupancy room? How much will it cost?</li>
+        <li class="a">You can request an additional bed for your room when making the reservation to ensure its availability. The extra bed costs 12$ a night.</li>
+        
+        <li class="q"><i class="ion-chevron-right"></i>What are your cancellation policies?</li>
+        <li class="a">Our cancellation policy claims that you can cancel your reservation before 11AM, without penalty, the day of your arrival. If you fail to comply, you will be billed for the night’s stay. Certain conditions apply for groups and packages. In addition, reservations made with the NR10% reduction code are non-cancellable and non-refundable.</li>
+    </ul>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<footer style="background-color: #333; color: white; padding: 20px; text-align: center;clear:both;">
+  <ul class="footerbar">
+    <li class="footersavi"><a href="termsconditions.html">Terms & Conditions</a></li>
+    <li class="footersavi"><a href="privacypolicy.html">Privacy Policy</a></li>
+    <li class="footersavi"><a href="cookies.html">Cookies</a></li>
+    <li class="footersavi"><a href="FAQ.html">FAQ</a></li>
+    <li class="footersavi"><a href="sitemap.html"> Sitemap </a></li>
+  </ul>
+  <br>
+  <p style="margin-bottom: 20px;">&copy; 2023 Savistar. All rights reserved.</p>
+  <p>Contact us at: savistar@gmail.com</p>
+</footer>  
+
+<script src="index.js">
+
+</script>
+<script>
+  let slides = document.querySelectorAll('.slide-container');
+  let index = 0;
+
+  function next(){
+    slides[index].classList.remove('act');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('act');
+  }
+  function prev(){
+    slides[index].classList.remove('act');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('act');
+  }
+  function myFunction() {
+  var x = document.getElementById("mynav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script>
+     
+</body>
+</html>
