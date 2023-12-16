@@ -5,6 +5,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 form {
@@ -66,7 +68,7 @@ input[type=text]:focus, input[type=password]:focus {
     justify-content: center;
 }
 
-navigation {
+.navigation {
     width: 90%;
     margin: 0 auto;
     clear: both;
