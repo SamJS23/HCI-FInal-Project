@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Contact Us</title>
 </head>
 
 
 </style>
 <body>
-<nav>
+  <nav class="nav" id="mynav">
     <div class="navigation">
       <a id="sav" href="index.html">Savistar</a>
-      
       <ul class="navbar">
+        <hr>
         <li class="savi"><a href="explore.html"> Explore</a></li>
         <li class="savi"><a href="rooms.html"> Rooms </a></li>
         <li class="savi"><a href="booking.html">Booking </a></li>
         <li class="savi"><a href="contact.html">Contact Us</a></li>
         <li class="savi"><a href="sign in.html">Sign In</a></li>
         <li class="savi"><a href="register.html"> Register</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <li class=" fa fa-bars" style="color: black;"></li>
+        </a>
+        <hr>
       </ul>
+      
     </div>
   </nav>
 
@@ -57,6 +63,14 @@
     <script>
       function submit(){
         alert("Thank you for contacting us! We will get back to you soon!")
+      }
+      function myFunction() {
+        var x = document.getElementById("mynav");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
       }
     </script>
 </body>

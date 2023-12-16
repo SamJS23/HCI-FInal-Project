@@ -1,66 +1,70 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  .navigation {
-    width: 90%;
-    margin: 0 auto;
-    clear: both;
-    font-family: 'Poppins';
-    color: black;
-  }
-  
-  #sav {
-    font-size: 33px;
-  }
-  
-  nav {
-    background: #fff;
-    height: 80px;
-    line-height: 80px;
-    flex-direction: row;
-    box-shadow: 1px 1px 1px rgba(66, 65, 65, 0.598);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9998;
-    transition: all 0.5s;
-  }
-  
-  ul.navbar {
-    margin: 0;
-    margin-right: 17px;
-    padding: 0;
-    display: inline-block;
-  }
-  
-  .savi {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  
-  
-  a {
-    font-size: 14px;
-    text-decoration: none;
-  }
-  .navigation a:hover {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  .navigation a:active {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  .navigation a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  width: 90%;
+  margin: 0 auto;
+  clear: both;
+  font-family: 'Poppins';
+  color: black;
+}
+
+#sav {
+  font-size: 33px;
+}
+hr{
+  display: none;
+}
+
+nav {
+  background: #fff;
+  height: 80px;
+  line-height: 80px;
+  flex-direction: row;
+  box-shadow: 1px 1px 1px rgba(66, 65, 65, 0.598);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  transition: all 0.5s;
+}
+
+ul.navbar {
+  margin: 0;
+  margin-right: 17px;
+  padding: 0;
+  display: inline-block;
+}
+
+.savi {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.navigation a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.navigation a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.navigation a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
 
   .registerbtn {
     background-color: dodgerblue;
@@ -78,32 +82,45 @@ body {
     opacity: 1;
   }
   
+  .icon {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
-  
-    #sav{
+    .savi {display: none;}
+    .navbar a.icon {
       display: block;
-      text-align: center;
-      text-indent: 5px;
-      padding-top: 15px;
-    }
-    nav{
-      height: fit-content;
-      line-height: unset;
-      position: static;
-      padding-bottom: 15px;
-      border-bottom: 3px solid grey;
-    }
+      position: absolute;
+      right: 15px;
+      top: 15px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+  .responsive {position: relative;}
+  .nav{
+    line-height: normal;
+    height:auto;
+    position: static;
+  }
+  .responsive ul.navbar {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .responsive .savi {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: unset;
+    margin-right: 5px;
+  }
+  .responsive hr {
   
-    ul.navbar {
-        display: block;
-        text-align: center;
-        text-indent: 20px;
-    }
-    .savi {
-        display: block;
-        margin: 10px 0;
-  
-    }
+      display: block;
+      border: 1px solid black; 
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
   }
 
   .container {

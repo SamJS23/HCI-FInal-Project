@@ -1,6 +1,5 @@
 body {
     font-family: "Poppins";
-    margin: 20px;
     background-image: url('../Images/background image.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,6 +7,115 @@ body {
     margin: 0;
     padding: 0;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  width: 90%;
+  margin: 0 auto;
+  clear: both;
+  font-family: 'Poppins';
+  color: black;
+}
+hr{
+  display: none;
+}
+#sav {
+  font-size: 33px;
+}
+
+nav {
+  background: #fff;
+  height: 80px;
+  line-height: 80px;
+  flex-direction: row;
+  box-shadow: 1px 1px 1px rgba(66, 65, 65, 0.598);
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+ul.navbar {
+  margin: 0;
+  margin-right: 17px;
+  padding: 0;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+}
+ a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+ a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+ a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .savi {display: none;}
+  .navbar a.icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+}
+@media screen and (max-width: 768px) {
+.responsive {position: relative;}
+.nav{
+  line-height: normal;
+  height:auto;
+  position: static;
+}
+.responsive ul.navbar {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.responsive .savi {
+  float: none;
+  display: block;
+  text-align: left;
+  padding: unset;
+  margin-right: 5px;
+}
+.responsive hr {
+
+    display: block;
+    border: 1px solid black; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+}
+
+
+
 
 form {
     width: 10%;
@@ -17,7 +125,7 @@ form {
 }
 
 textarea {
-    width: 500px;
+    width: auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -42,7 +150,7 @@ input[type=text]:focus, input[type=password]:focus {
   }
 
   .container {
-    width: 90%;
+    width: 80%;
     margin: 5px;
     padding: 30px;
     color:whitesmoke;
@@ -68,91 +176,3 @@ input[type=text]:focus, input[type=password]:focus {
     justify-content: center;
 }
 
-.navigation {
-    width: 90%;
-    margin: 0 auto;
-    clear: both;
-    font-family: 'Poppins';
-    color: black;
-  }
-  
-  #sav {
-    font-size: 33px;
-  }
-  
-  nav {
-    background: #fff;
-    height: 80px;
-    line-height: 80px;
-    flex-direction: row;
-    box-shadow: 1px 1px 1px rgba(66, 65, 65, 0.598);
-    position: static;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: all 0.5s;
-  }
-  
-  ul.navbar {
-    margin: 0;
-    margin-right: 17px;
-    padding: 0;
-    display: inline-block;
-  }
-  
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  
-  
-  a {
-    font-size: 14px;
-    text-decoration: none;
-  }
-  .navigation a:hover {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  .navigation a:active {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  .navigation a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 768px) {
-  
-    #sav{
-      display: block;
-      text-align: center;
-      text-indent: 5px;
-      padding-top: 15px;
-    }
-    nav{
-      height: fit-content;
-      line-height: unset;
-      position: static;
-      padding-bottom: 15px;
-      border-bottom: 3px solid grey;
-    }
-  
-    ul.navbar {
-        display: block;
-        text-align: center;
-        text-indent: 20px;
-    }
-    li {
-        display: block;
-        margin: 10px 0;
-  
-    }
-  }
-  
-  
