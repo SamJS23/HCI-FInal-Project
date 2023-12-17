@@ -12,7 +12,7 @@
 
 **Live Link:** https://samjs23.github.io/HCI-Final-Project/
 
-**Project Report and Demonstration Video:**
+**Project Report and Demonstration Video:** https://drive.google.com/drive/folders/1y3_y47B__DZWN6Ig0yENajN02dhc1Wup?usp=sharing
 
 
 ## Purpose of the Prototype:
